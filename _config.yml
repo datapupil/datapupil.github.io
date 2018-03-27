@@ -40,7 +40,7 @@ avatar: "/img/umesh.jpg"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Umesh Uma Shanakr Ramanathan
+  name: Umesh Ramanathan
   email: "contact.umeshram@gmail.com"
   github: datapupil    # eg. daattali
 
@@ -97,7 +97,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "China/Shanghai"
+timezone: "Singapore"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
