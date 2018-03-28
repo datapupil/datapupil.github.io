@@ -1,7 +1,9 @@
-TIME SERIES FORECASTING
-================
+---
 Umesh Uma Shankar
 March 19, 2018
+---
+
+TIME SERIES FORECASTING
 
 INTRODUCTION
 ------------
