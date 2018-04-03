@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: TIME SERIES FORECASTING
 subtitle: Sleep time Analysis
 use-site-title: true
