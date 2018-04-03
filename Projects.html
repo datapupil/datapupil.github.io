@@ -1,0 +1,14 @@
+---
+layout: page
+title: Projects
+subtitle: List of my data science projects
+use-site-title: true
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
