@@ -1,11 +1,9 @@
 ---
-Umesh Uma Shankar
-March 19, 2018
+title: TIME SERIES FORECASTING
+subtitle: Sleep Time Forecasting
 ---
 
-TIME SERIES FORECASTING
-
-INTRODUCTION
+*INTRODUCTION*
 ------------
 
 This is an effort to forecast a time series and to create a standard process flow for building an ARIMA model. The sample data looks like,
