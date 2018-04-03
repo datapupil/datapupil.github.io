@@ -1,6 +1,8 @@
 ---
+layout: page
 title: TIME SERIES FORECASTING
-subtitle: Sleep Time Forecasting
+subtitle: Sleep time Analysis
+use-site-title: true
 ---
 
 *INTRODUCTION*
