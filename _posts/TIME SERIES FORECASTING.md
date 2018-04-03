@@ -27,7 +27,7 @@ Plot the timeseries to look for any seasonality or trend in the historical data
 plot(sleep.timeseries,xlab = "Week",ylab = "AvgSleepTime/Day")
 ```
 
-![](Plots/plot-unnamed-chunk-4-1.png)
+![](/Plots/plot-unnamed-chunk-4-1.png)
 
 **NOTE:**
 **Trend** - Persistent increase or decrease in the series over a period of time.
@@ -40,7 +40,7 @@ smooth.sleep.timeseries<-SMA(sleep.timeseries,n=5)
 plot(smooth.sleep.timeseries,xlab = "Week",ylab = "AvgSleepTime/Day")
 ```
 
-![](Plots/plot-unnamed-chunk-5-1.png)
+![](/Plots/plot-unnamed-chunk-5-1.png)
 
 ARIMA MODEL
 -----------
@@ -62,7 +62,7 @@ diff.sleep.timeseries<- diff(sleep.timeseries,differences = 1)
 plot(diff.sleep.timeseries,xlab = "Week")
 ```
 
-![](Plots/plot-unnamed-chunk-6-1.png)
+![](/Plots/plot-unnamed-chunk-6-1.png)
 
 After first order differentiation, the time series looks stationary where its mean, variance doesnot change over time and hence we are good to build an ARIMA model for this series with the parameter **d=1**. The AR and MA values can be identified based on looking at plots of the autocorrelations and partial autocorrelations.
 **NOTE:**
@@ -74,13 +74,13 @@ Plot the autocorrelation and partial autocorrelation using acf() and pacf()
 acf(diff.sleep.timeseries,main="Autocorrelation Plot")
 ```
 
-![](Plots/plot-unnamed-chunk-7-1.png)
+![](/Plots/plot-unnamed-chunk-7-1.png)
 
 ``` r
 pacf(diff.sleep.timeseries,main="Partial Autocorrelation Plot")
 ```
 
-![](Plots/plot-unnamed-chunk-7-2.png)
+![](/Plots/plot-unnamed-chunk-7-2.png)
 
 Based on the plots,
 1. The bar at lag1 on the ACF plot is significant(Spike is taller than the 95% statistically significant band) and negative, followed by a fairly sharp cutoff
@@ -124,7 +124,7 @@ Plot an autocorrelation to conclude residuals are not correlated, if all the spi
 acf(sleep.timeseries.arima1$residuals,main="Autocorrelation Plot for Residuals")
 ```
 
-![](Plots/plot-unnamed-chunk-9-1.png)
+![](/Plots/plot-unnamed-chunk-9-1.png)
 
 Check the mean for residuals using mean() function
 
@@ -140,7 +140,7 @@ Plot a histogram to check whether the residuals are normally distributed and hav
 hist(sleep.timeseries.arima1$residuals,breaks=IQR(sleep.timeseries.arima1$residuals/4))
 ```
 
-![](Plots/plot-unnamed-chunk-11-1.png)
+![](/Plots/plot-unnamed-chunk-11-1.png)
 
 To further test the autocorrelation, we can perform Ljung-Box test using Box.test(), where the resulting p value can be interpreted in the following ways,
 **If p-value &lt; 0.051:** Values are showing dependence on each other i.e. possibility of correlation
@@ -192,7 +192,7 @@ forecast.sleep.timeseries.arima1
 plot(forecast.sleep.timeseries.arima1)
 ```
 
-![](Plots/plot-unnamed-chunk-15-1.png)
+![](/Plots/plot-unnamed-chunk-15-1.png)
 
 **Comparison between different ARIMA model forecast results**
 **ARIMA(0,1,1)**
